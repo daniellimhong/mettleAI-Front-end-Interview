@@ -1,3 +1,9 @@
+<!-- 
+    Font: Montserrat
+    Form has states, isOpen 
+    - Toggle Accordian
+ -->
+
 # mettleAI Front-End Developer Intern Interview
 
 ## Interview Task
