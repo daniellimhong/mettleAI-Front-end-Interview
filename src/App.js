@@ -3,6 +3,7 @@ import Header from './Components/Header'
 import FormDisplay from './Components/FormDisplay'
 import styled from 'styled-components'
 import './App.css'
+import Form from './Components/Form'
 
 const Body = styled.div`
   width: 100vw;
@@ -14,11 +15,16 @@ const Body = styled.div`
 const TextBox = styled.div`
     width: 100%;
     height: 20%;
-    border: 1px solid black;
+    // border: 1px solid black;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     text-align: center;
+`
+
+const TextBox2 = styled(TextBox)`
+  width: inherit;
+  min-height: 60%;
 `
 
 const Text = styled.p`
@@ -35,9 +41,12 @@ function App() {
       <Header />
       <Body>
         <TextBox>
-          <Text>Referral Patients</Text>
-          <Text style={{fontSize: "20px"}}>You can add up to 5 patients at a time</Text>
+            <TextBox2>
+              <Text>Referral Patients</Text>
+              <Text style={{fontSize: "20px"}}>You can add up to 5 patients at a time</Text>
+            </TextBox2>
         </TextBox>
+        <FormDisplay/>
       </Body>
       {/* Form Display */}
         {/* Form */}

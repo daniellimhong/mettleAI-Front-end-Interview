@@ -18,7 +18,6 @@ const TextBox = styled.div`
     flex-direction: column;
     justify-content: center;
     text-align: center;
-
 `
 
 const Text = styled.p`
